@@ -16,6 +16,7 @@
 \definecolor{heading}{HTML}{000e17}
 \definecolor{emphasis}{HTML}{696969}
 \definecolor{body}{HTML}{01415f}
+% \definecolor{body}{HTML}{110000}
 
 \colorlet{heading}{heading}
 \colorlet{accent}{accent}
@@ -29,16 +30,16 @@
 
 \begin{document}
 \name{Simone Bologna}
-\tagline{}
+\tagline{\linkedin{smnbologna} \github{simonecid}}
 %\photo{2.5cm}{BrunoAlves}
 \personalinfo{
-    \printinfo{\faBirthdayCake}{27th July 1992}
-    \email{smnbologna@gmail.com}
     \phone{+39 320 110 34 66}
-%    \mailaddress{SR Njemačke 6, 10000}
+    \email{smnbologna@gmail.com}
+    \printinfo{\faBirthdayCake}{27th July 1992}
     \location{Vicolo Plinio 14, Valmorea, Italy}
-    \linkedin{linkedin.com/in/smnbologna}
-    \github{github.com/simonecid}
+%    \mailaddress{SR Njemačke 6, 10000}
+    % \linkedin{linkedin.com/in/smnbologna}
+    % \github{github.com/simonecid}
 }
 
 %
@@ -51,21 +52,23 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experience %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvsection[page1sidebar]{Experience}
+\cvsection[page1sidebar]{Education}
 
 %%%%%%%%%%%%%
 %Experience 1
 %%%%%%%%%%%%%
 
-\cvevent{Java Engineer}{Deegloo d.o.o.}{August 2019 -- Ongoing}{Zagreb, Croatia}
+\cvevent{PhD student}{University of Bristol \& CERN}{February 2017 -- Ongoing}{Bristol, UK \& Geneva, Switzerland}
 
 \begin{itemize}
     \setlength{\itemindent}{0.5em}
-    \item[--]   \small{Developing software using Java Spring Boot}
-    \item[--]   \small{Writing integration and unit tests using Cucumber}
-    \item[--]   \small{Version Control using Git}
-    \item[--]   \small{Tasks management using Jira}
-    \item[--]   \small{Working by Scrum framework}
+    \item[--]   \small{3.5-year course, 2 years in Bristol and 1.5 years at CERN}
+    \item[--]   \small{\underline{Expected thesis submission date: September 2020}}
+    \item[--]   \small{I built a \textbf{parameterised simulation of the level-1 trigger} of the CMS experiment to estimate trigger rates of a system with equivalent performance running at the Future Circular Collider (FCC). I used the results to \textbf{understand challenges of data acquisition systems at FCC.}}
+    % \underline{Relevant publications and talks: [1], [2], [3].}}
+    \item[--]   \small{I \textbf{developed the flagship algorithm for detecting hadron jets} of the Phase-2 upgrade of level-1 trigger in the CMS detector. I studied its physics performance in simulations, and I \textbf{wrote and tested firmware targeting Xilinx FPGAs using High-Level Synthesis} tools. 
+    Results will be published later this year.}
+    % \underline{Relevant publications and talks: [4].}}
 \end{itemize}
 
 \medskip
@@ -74,7 +77,7 @@
 %Experience 2
 %%%%%%%%%%%%%
 
-\cvevent{Fullstack Developer}{King ICT d.o.o.}{July 2018 -- August 2019}{Zagreb, Croatia}
+\cvevent{Tutor at international school}{International School of Trigger and Data Acquisition}{13th -- 22nd January 2020}{Valencia, Spain}
 
 %\begin{itemize}
 %    \item Fullstack JAVA developer
@@ -82,64 +85,83 @@
 
 \begin{itemize}
     \setlength{\itemindent}{0.5em}
-    \item[--]   \small{Developing microservices using .NET Core Framework}
-    \item[--]   \small{Developing and maintaining software using .NET Framework and SQL Server}
-    \item[--]   \small{Developing and maintaining frontend using React.js}
-    \item[--]   \small{Developing mobile apps using React Native}
-    \item[--]   \small{Designing and coding database tables to store the application’s data}
-    \item[--]   \small{Working by Scrum framework}
-    \item[--]   \small{Tracking issues and version control using Git and TFS}
+    \item[--]   \small{Tutored a lab on the Arduino microcontroller}
 \end{itemize}
 
 \medskip
 
+\cvevent{Student at international school}{International School of Trigger and Data Acquisition}{3rd -- 12th April 2019}{Egham, UK}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   \small{Introductory school to triggering and acquiring data for physics experiments}
+\end{itemize}
+
+\medskip
+
+\cvevent{Fellowship}{CERN}{November 2016 -- January 2017}{Geneva, Switzerland}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   \small{Developed high-performance software for \textbf{Nvidia GPU}s in \textbf{CUDA} for the high-level trigger of the CMS experiment}
+\end{itemize}
+
+\medskip
+
+\cvevent{Student at international school}{CERN School of Computing}{13th -- 26th September 2015}{Geneva, Switzerland}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   \small{Course on Scientific Computing for High Energy Physics}
+\end{itemize}
+
+\medskip
+
+\cvevent{Bachelor \& Master Degree in Particle Physics}{Università degli Studi di Milano – Bicocca}{2011 -- 2016}{Milan, Italy}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   \small{Master thesis title: \textit{Upgrade of the CMS Level-1 Trigger and efficiency study of the tau}}:
+    \begin{itemize}
+    \item[--]   \small{I computed the $\tau$ \textbf{trigger efficiency turn-on curve} by applying tag and probe techniques to Z$^0\to\tau\tau$ decays. }
+    \item[--]   \small{I \textbf{developed the general control and monitoring web interface} for the CMS L1-Trigger. }
+    \end{itemize}
+    % This interface provides detailed information on the system status and it is routinely used by experts to promptly diagnose critical issues occurring during data taking.
+\end{itemize}
+
+\cvevent{High School Degree in Information Technology}{Istituto Tecnico Industriale Statale Magistri Cumacini (Technical Institute)}{2006 -- 2011}{Como, Italy}~\\[4cm]
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Projects %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvsection[page2sidebar]{Projects}
+% \cvsection[page2sidebar]{Publications and talks}
 
-%%%%%%%%%%%%%
-%Project 1
-%%%%%%%%%%%%%
+% \begin{enumerate}
+%   \item \small{FCC collaboration, Future Circular Collider Study. Volume 3: The Hadron Collider (FCC-hh) Conceptual Design Report, CERN-ACC-2018-0058, Geneva, December 2018. Published in Eur. Phys. J. ST., p. 973-975}
+%   \item \small{S. Bologna et al. “Trigger \& Data Acquisition at FCC-hh”. Talk at the FCC Week 2017, Berlin. 29th May - 2nd June 2017. 
+% URL: \url{https://indico.cern.ch/event/556692/contributions/2465162/}}
+%   \item \small{S. Bologna et al. “Trigger \& Data Acquisition at FCC-hh”. Talk at the FCC Week 2018, Amsterdam. 12th April 2018. 
+% URL: \url{https://indico.cern.ch/event/656491/contributions/2923411/}}
+% \item \small{CMS Collaboration, The Phase-2 Upgrade of the CMS Level-1 Trigger, Tech. Rep. 1274, CERN-LHCC-2020-004. CMS-TDR-021, CERN, Geneva, Apr 2020.}
+% \end{enumerate}
 
-\cvevent{digitalnakomora.hr}{King ICT d.o.o.}{September 2018 -- March 2019}{Zagreb, Croatia}
-
-\begin{itemize}
-  \item \small{The platform bring all the important information for entrepreneurs such as: macroeconomic indicators at the level of Croatia and individual counties, average monthly net wage, registered unemployment rate, inflation, number of active business entities and many more. Business entities can be searched by name, responsible persons or statistics of activity and can be compared with other entities.}
-  \item Techs: ASP.NET MVC, Entity Framework, ReactJS and SQL Server
-\end{itemize}
-
-\divider
-
-%
-
-%%%%%%%%%%%%%
-%Project 2
-%%%%%%%%%%%%%
-
-\cvevent{Electronic Toll Collection}{King ICT d.o.o.}{March 2019 -- August 2019}{Zagreb, Croatia}
-
-\begin{itemize}
-  \item Description -- ETC is universal platform for payments
-  \item Techs: Microservice architecture with .NET Core 2, Entity Framework, RabbitMQ and MassTransit, React Native and SQL Server 
-\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Certificates %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvsection{Certificates}
+% \cvsection{Certificates}
 
 %%%%%%%%%%%%%
 %Certificate 1
 %%%%%%%%%%%%%
 
-\cvevent{MCSD: App Builder — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
-\divider
+% \cvevent{MCSD: App Builder — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
+% \divider
 
 %%%%%%%%%%%%%
 %Certificate 2
 %%%%%%%%%%%%%
 
-\cvevent{MCSA: Web Applications — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
-\divider
+% \cvevent{MCSA: Web Applications — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
+% \divider
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Interests %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
