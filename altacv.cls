@@ -27,7 +27,7 @@
 
 \RequirePackage{xcolor}
 
-\definecolor{circlecol}{HTML}{01415f}
+\definecolor{circlecol}{HTML}{01415F}
 \colorlet{accent}{blue!70!black}
 \colorlet{heading}{black}
 \colorlet{emphasis}{black}
