@@ -1,0 +1,352 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{altacv}
+
+%Layout
+\geometry{marginparwidth=6.8cm,marginparsep=1.2cm,footskip=2\baselineskip}
+
+%Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+%Colors
+
+\definecolor{accent}{HTML}{000E17}
+\definecolor{heading}{HTML}{000E17}
+\definecolor{emphasis}{HTML}{696969}
+\definecolor{body}{HTML}{01415F}
+% \definecolor{body}{HTML}{110000}
+
+\colorlet{heading}{heading}
+\colorlet{accent}{accent}
+\colorlet{emphasis}{emphasis}
+\colorlet{body}{body}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%
+
+\begin{document}
+\name{Simone Bologna}
+\tagline{\linkedin{smnbologna} \github{simonecid}}
+%\photo{2.5cm}{BrunoAlves}
+\personalinfo{
+    \email{smnbologna@gmail.com}
+    \phone{+39 320 110 34 66}
+    \printinfo{\faBirthdayCake}{27th July 1992}
+    \location{Vicolo Plinio 14, Valmorea, Italy}
+    % \linkedin{linkedin.com/in/smnbologna}
+    % \github{github.com/simonecid}
+}
+
+%
+
+\begin{fullwidth}
+\makecvheader
+%
+\end{fullwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experience %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Qualifications}
+
+%%%%%%%%%%%%%
+%Experience 1
+%%%%%%%%%%%%%
+
+\cvevent{PhD}{University of Bristol \& CERN}{Expected end of 2020}{Bristol, UK \& Geneva, Switzerland}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    % \item[--]   \small{3.5-year course, 2 years in Bristol and 1.5 years at CERN}
+    \item[--]   \underline{Expected award date: end of 2020}
+    \item[--]   Thesis draft title: \textit{Triggering at high-luminosity hadron colliders}
+    \item[--]   Supervisors: Dr. Jim Brooke and Prof. Joel Goldstein
+\end{itemize}
+
+\medskip
+
+\cvevent{Master Degree in Particle Physics}{Università degli Studi di Milano – Bicocca}{2016}{Milan, Italy}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   \textbf{Final mark: 110/110 cum laude}
+    \item[--]   Thesis title: \textit{Upgrade of the CMS Level-1 Trigger and efficiency study of the tau}
+    \item[--]   Supervisors: Dr. Alessandro Thea and Prof. Marco Paganoni
+\end{itemize}
+
+\medskip
+
+\cvevent{Bachelor Degree in Physics}{Università degli Studi di Milano – Bicocca}{2014}{Milan, Italy}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   \textbf{Final mark: 110/110 cum laude}
+    \item[--]   Thesis title: \textit{A cosmic-ray stand to test the response of microchannel-plate detectors to ionizing particles}
+    \item[--]   Supervisors: Prof. Tommaso Tabarelli de Fatis
+\end{itemize}
+
+\cvsection{Fellowships and scholarships awarded}
+
+\cveventnoplace{CERN doctoral student scholarship}{June 2017 -- November 2018}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   Prestigious 18-month scholarship to fund my PhD studies while staying at CERN
+\end{itemize}
+
+\medskip
+
+\cveventnoplace{PhD scholarship}{February 2017 -- August 2020}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   Scholarship to fund my PhD studies in Bristol
+\end{itemize}
+
+\medskip
+
+\cveventnoplace{INFN fellowship}{October 2016 -- January 2017}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   I \textbf{ranked second} out of around 30 candidates, 14 funded positions were available
+    \item[--]   Three-month fellowship to fund my staying at CERN
+\end{itemize}
+
+\medskip
+
+\cveventnoplace{Master Degree scholarship}{January 2016 -- June 2016}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   Six-month scholarship to fund my staying at CERN for my master degree project
+\end{itemize}
+
+\newpage
+
+\cvsection{Research experience}
+
+\cvevent{Doctoral researcher}{University of Bristol \& CERN}{February 2017 -- Ongoing}{Bristol, UK \& Geneva, Switzerland}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   I built a \textbf{parameterised simulation of the level-1 trigger} of the CMS experiment to estimate trigger rates of a system with equivalent performance running at the Future Circular Collider (FCC) and \textbf{understand challenges of data acquisition systems at FCC.} 
+    %I first computed parameters modelling the performance of jet, muon, and e/$\gamma$ triggers. Then, I compared the results of the parameterised simulation with the ones from the CMS full-simulation for validation. Finally, I ran the parameterised simulation on events at the FCC-hh energy and luminosity. 
+    The results showed that detectors at FCC-hh may have to develop sophisticated multi-object triggers in order to be sensitive to interesting physics in the high pile-up environment of the experiment and maintain a reasonable accept rate at the same time. 
+    I contributed with my research to the FCC-hh Conceptual Design Report [1] and to defining the \textbf{European Strategy for Particle Physics}.
+    \item[--]   I \textbf{developed the flagship algorithm for detecting hadron jets and computing energy sums} of the Phase-2 upgrade of level-1 trigger in the CMS detector. I designed the algorithm and studied its reconstruction performance in Geant4 simulations of the CMS detector to verify that it provided satisfactory reconstruction performance. I \textbf{wrote firmware targeting Xilinx KU115, KU15P and VU9P FPGAs using High-Level Synthesis} tools. I demonstrated the algorithm on trigger hardware mounting KU115 and KU15P FPGAs and validated its output against CMS simulations obtaining an agreement rate of 96\%. 
+    Results from this work were included in the technical design report of the Phase-2 upgrade of the CMS level-1 trigger [2].
+    \item[--] I contributed to \textbf{maintaining the Online Software of the level-1 trigger of the CMS experiment}. This work was fundamental in ensuring smooth detector operation during the Run-2 of the CMS experiment by providing information on the system status to experts and helping in diagnosing issues occurring during data taking.
+    \item[--] I was the \textbf{on-call expert of the level-1 trigger of the CMS experiment} for three weeks. I was responsible for preparing the system for data taking and solving any potential issue that could arise during operations.
+    \item[--] I did over 30 shifts in the control room of the CMS experiment monitoring the level-1 trigger.
+\end{itemize}
+
+\medskip
+
+\cvevent{INFN Fellowship}{CERN}{November 2016 -- January 2017}{Geneva, Switzerland}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   I developed an \textbf{algorithm to find hit doublets in the CMS tracker} for \textbf{Nvidia GPU}s using \textbf{CUDA}. This work was performed in view of the Run-3 of CMS when GPUs will be employed in high-level trigger to reconstruct tracks.
+\end{itemize}
+
+\medskip
+
+\cvevent{Master Degree research project}{Università degli Studi di Milano – Bicocca}{January - September 2016}{Milan, Italy \& Geneva, Switzerland}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   I computed the $\tau$ \textbf{trigger efficiency turn-on curve} by applying tag and probe techniques to Z$^0\to\tau\tau$ decays. Results from my work contributed to every analysis involving the $\mathrm{H} \to \tau tau$ process, including the $\mathrm{H} \to \tau tau$ observation.
+    \item[--]   I \textbf{developed the general control and monitoring web interface} for the CMS L1-Trigger. This interface provides detailed information on the system status and it was routinely used by experts during Run-2 to promptly diagnose critical issues occurring during data taking.
+\end{itemize}
+
+\medskip
+
+\cvevent{Bachelor Degree research project}{Università degli Studi di Milano – Bicocca}{July - August 2014}{Milan, Italy}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--] I measured the efficiency and time resolution of micro-channel plate (MCP) detectors. I measured a time resolution of 100 ps and an efficiency of 50\% in a non-optimized detector. This preliminary work was the first step of the R\&D aimed to investigate whether the MCP could be exploited for high-resolution timing applications in the CMS detector.
+\end{itemize}
+
+\newpage
+
+\cvsection{Teaching experience}
+
+%%%%%%%%%%%%%
+%Experience 2
+%%%%%%%%%%%%%
+
+\cvevent{Tutor}{International School of Trigger and Data Acquisition}{13th -- 22nd January 2020}{Valencia, Spain}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   I tutored a lab on Arduino microcontrollers introducing students to basics of programming these devices.
+    \item[--]   I was asked to tutor by the lab organiser after performing well as a student the previous year
+\end{itemize}
+
+\medskip
+
+\cvevent{Demonstrator}{University of Bristol}{February -- April 2017 \& 2019}{Bristol, UK}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   I helped students completing exercises for computational physics course.
+    \item[--]   I reviewed and marked their work.
+\end{itemize}
+
+\medskip
+
+{\large\color{emphasis}Outreach\par}
+\smallskip
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   I have guided more than 10 tours of the CMS experiment
+    \item[--]   I have organised three outreach sessions on particle physics and CERN for high-school students 
+\end{itemize}
+
+\cvsection{Schools attended}
+
+\cvevent{}{International School of Trigger and Data Acquisition}{3rd -- 12th April 2019}{Egham, UK}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   Introductory school to triggering and acquiring data for physics experiments.
+\end{itemize}
+
+\medskip
+
+\cvevent{}{CERN School of Computing}{13th -- 26th September 2015}{Kavala, Greece}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--]   Course on Scientific Computing for High Energy Physics.
+\end{itemize}
+
+\medskip
+
+\cvsection{Conferences attended}
+
+\cvevent{}{TWEPP 2019, Topical Workshop on Electronic for Particle Physics}{2nd -- 6th September 2019}{Santiago de Compostela, Spain}
+
+\medskip
+
+\cvevent{}{FCC week 2018}{9th -- 13th April 2018}{Amsterdam, Netherlands}
+\medskip
+
+\cvevent{}{FCC week 2017}{29th May -- 2nd June 2017}{Berlin, Germany}
+\medskip
+
+\cvsection{Publications}
+
+{\large\color{emphasis}Papers\par}
+
+\medskip
+
+I have been a member of CMS collaboration since January 2016.
+To the 13th of August 2020, I am a coauthor of 105 published CMS papers.\\
+I am a member of the FCC-hh working group.\\
+\smallskip
+I made a major contribution to these selected papers:
+\smallskip
+\begin{enumerate}
+  \setlength{\itemindent}{0.5em}
+  \item FCC collaboration, Future Circular Collider Study. Volume 3: The Hadron Collider (FCC-hh) Conceptual Design Report, CERN-ACC-2018-0058, Geneva, December 2018. Published in Eur. Phys. J. ST., p. 973-975
+  \item CMS Collaboration, The Phase-2 Upgrade of the CMS Level-1 Trigger, Tech. Rep. 1274, CERN-LHCC-2020-004. CMS-TDR-021, CERN, Geneva, Apr 2020.
+\end{enumerate}
+
+\medskip
+
+\newpage
+
+{\large\color{emphasis}Conference proceedings\par}
+
+\medskip
+
+\begin{itemize}
+    \item[--] S. Bologna on behalf of the CMS collaboration, ``Overview of the HL-LHC Upgrade for the CMS Level-1 Trigger'', In: PoS, Volume 370, 2020, URL: \url{https://doi.org/10.1016/j.physletb.2020.135578}
+    \item[--] S. Bologna et al., ``SWATCH: Common software for controlling and monitoring the upgraded CMS Level-1 trigger''. In: vol. 898. IOP Publishing, 2017, p. 032040. URL: \url{https://doi.org/10.1088/1742-6596/898/3/032040}
+    \item[--] S. Bologna et al., ``Common Software for Controlling and Monitoring the Upgraded CMS Level-1 Trigger''. In: Proceedings of International Conference on Technology and Instrumentation in Particle Physics 2017. TIPP 2017. Springer Proceedings in Physics, vol 212. Springer, Singapore. URL: \url{https://doi.org/10.1007/978-981-13-1313-4_60}
+
+\end{itemize}
+
+\medskip
+
+{\large\color{emphasis}Talks\par}
+
+\medskip
+
+\begin{itemize}
+  \item[--] S. Bologna on behalf of the CMS collaboration, ``Overview of the HL-LHC Upgrade for the CMS Level-1 Trigger''. Talk at TWEPP 2019, 4th September 2019.
+    URL: \url{https://indico.cern.ch/event/799025/contributions/3486499/}
+  \item[--] S. Bologna on behalf of the CMS collaboration, ``Overview of CMS trigger''. Talk at 2018 international workshop on the high energy Circular Electron-Positron Collider (CEPC). 13th November 2018. 
+    URL: \url{https://indico.ihep.ac.cn/event/7389/session/22/contribution/191}
+  \item[--] S. Bologna et al. ``Trigger \& Data Acquisition at FCC-hh''. Talk at FCC Week 2018, Amsterdam. 12th April 2018. 
+    URL: \url{https://indico.cern.ch/event/656491/contributions/2923411/}
+  \item[--] S. Bologna et al. ``Trigger \& Data Acquisition at FCC-hh''. Talk at FCC Week 2017, Berlin. 31st May 2017. 
+    URL: \url{https://indico.cern.ch/event/556692/contributions/2465162/}
+\end{itemize}
+
+\medskip
+
+{\large\color{emphasis}Posters\par}
+
+\medskip
+
+\begin{itemize}
+    \item[--] S. Bologna, J. Brooke, D. Newbold and P. Sphicas ``Preliminary performance study of a CMS-like trigger architecture in FCC-hh''. Poster at FCC week 2017, Berlin.
+    \item[--] S. Bologna and J. Brooke, ``Development of a jet finding algorithm for the CMS Phase-2 trigger upgrade''. Poster at ISOTDAQ 2018, Egham.
+\end{itemize}
+
+\cvsection{Languages}
+
+\medskip
+\begin{description}
+    \item[Italian:] Native speaker
+    \item[English:] Full professional proficiency
+    \item[French:] Basic proficiency
+\end{description}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Certificates %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \cvsection{Certificates}
+
+%%%%%%%%%%%%%
+%Certificate 1
+%%%%%%%%%%%%%
+
+% \cvevent{MCSD: App Builder — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
+% \divider
+
+%%%%%%%%%%%%%
+%Certificate 2
+%%%%%%%%%%%%%
+
+% \cvevent{MCSA: Web Applications — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
+% \divider
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Interests %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \cvsection{Interests}
+
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Electronics,
+%   25/9em/accent!60/Science,
+%   5/13em/accent!10/Movies,
+%   20/15em/accent!40/Sport,
+%   30/9em/accent/Technology,
+%   5/8em/accent!20/Literature
+% }
+
+
+%%New Page
+% \clearpage
+
+
+
+\end{document}
+
