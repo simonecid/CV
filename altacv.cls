@@ -127,6 +127,13 @@
   \medskip
 }
 
+\newcommand{\cveventnoplace}[2]{%
+  {\large\color{emphasis}#1\par}
+  \smallskip
+  {\small{\faCalendar \hspace{0.5em}#2}\par}
+  \medskip
+}
+
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
   \multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
